@@ -1,0 +1,181 @@
+---
+layout: post
+title: Introducción a la línea de comandos 
+---
+
+El presente laboratorio presentará una serie de ejercicios que deberá copiar,
+ejecutar y analizar. Por conveniencia, se le proporcionará un cuadernillo donde anotará
+sus descubrimientos.
+
+Procure _no copiar y pegar_ los comandos.
+
+##Objetivos
+
+* Aprender a navegar la estructura de directorios de linux
+* Familiarizarse con la línea de comandos
+* Aprender atajos útiles
+
+##Ejercicio cero: encuentre y ejecute la línea de comandos
+
+* Puede encontrarla en el menú `Aplicaciones`, en el sub-menú `Accesorios`
+  con el nombre de `Terminal`
+* En ubuntu, la combinación de teclas `Alt+F2` ejecuta un programa al que le podemos dar un
+  nombre de otro programa que queramos correr. Pruebe escribiendo `gnome-terminal` 
+* Pruebe crear un ícono de acceso rápido: en la barra superior, dé click derecho y
+  elija la opción `Añadir al panel`, luego, `Lanzador de aplicaciones`, dé click en `Adelante`
+  y luego busque la terminal bajo `Accesorios`. Cuando la encuentre, dé click en `Añadir`
+
+
+##Ejercicios de código
+
+En estos, cada línea con un tipo de letra como `este` es algo que deberá ejecutar en la terminal.
+_Tenga cuidado con instrucciones en mayúsculas dentro de corchetes (`[]`), éstas no debe copiarlas, sino seguir lo que en ellas se diga_, 
+por ejemplo, si encuentra algo como:
+    
+    ls /[PRESIONE TAB]
+
+debería escribir
+
+    ls
+
+Y luego presionar la tecla tab de su teclado.
+
+Al final de cada ejercicio, hay preguntas que deberá contestar.
+
+###Ejercicio 1
+
+    
+    cd /
+    ls
+    ls .
+    cd /home
+    pwd
+    ls .
+    cd ..
+    ls .
+    cd ..
+    cd /var
+    pwd
+    ls .
+    cd ..
+    ls
+    ls .
+    dir
+    dir .
+    ls /home
+    pwd
+    ls /var
+    pwd
+    ls /foo
+    ls /var/lib
+
+* ¿Qué significa `/`?
+* ¿Qué hace el comando `ls`?
+* ¿Y el comando `dir`?
+* ¿Qué hace el comando `cd`?
+* ¿Qué hace el comando `pwd`?
+* ¿Cómo interpretaría lo que el comando `pwd` imprime en pantalla?
+* ¿Qué significa `.`?
+* ¿Qué significa `..`?
+* Si se le dice que vaya al directorio `lib` 
+  que está dentro del directorio `user` 
+  que está dentro del directorio  raíz y liste sus contenidos
+  ¿qué escribiría?
+
+###Ejercicio 2
+
+    cd ~
+    ls .
+    cd /home/[ESCRIBA SU NOMBRE DE USUARIO]
+    ls .
+    
+
+* ¿Qué significa `~`?
+* ¿Si hubiera más usuarios en el sistema, dónde estarían sus archivos?
+
+###Ejercicio 3
+
+    cd ~
+    ls .
+    cd /usr/local/lib
+    ls .
+    cd -
+    ls .
+
+* ¿Qué función tiene el guión (`-`) al navegar entre carpetas?    
+* ¿Cuál sería la salida de `ls .` en última línea si en lugar
+  de escribir `cd -` hubiera escrito `cd ..`?
+* ¿Cuál es la diferencia entre el guión y el doble-punto (`..`) al navegar
+  entre carpetas?
+
+###Ejercicio 4
+
+    cd ~
+    ls .
+    mkdir hola
+    ls .
+    cd hola
+    [PRESIONE LA TECLA ARRIBA HASTA QUE APAREZCA ls ., LUEGO, PRESIONE ENTER]
+
+* ¿Para qué sirve el comando `mkdir`?
+* ¿Qué pasa si presiona las teclas arriba/abajo mientras está en la línea de comandos?
+
+###Ejercicio 5
+
+    cd /h[PRESIONE LA TECLA TAB]
+    ls [PRESIONE LA TECLA TAB DOS VECES]
+    cd /[PRESIONE LA TECLA TAB]
+    cd /l[PRESIONE LA TECLA TAB]
+    cd /li[PRESIONE LA TECLA TAB]
+
+* ¿Para qué sirve la tecla tab al escribir comandos en la línea de comandos
+
+###Ejercicio 6
+
+    ls /var/usr/local[PRESIONE CTRL+U]
+    ls /var/usr/local[PRESIONE CTRL+C]
+    ls /foo/ar[PRESIONE CTRL+W]
+    
+* ¿Para qué sirven `CTRL+C`, `CTRL+W` y `CTRL+U`? 
+* ¿cuál es la diferencia entre ellos?
+
+###Ejercicio 7
+
+    ls /root
+    sudo ls /root
+
+* ¿Qué hace el comando `sudo`?
+
+###Ejercicio 8
+
+    ls -a ~
+    ls --all /home/[ESCRIBA SU NOMBRE DE USUARIO]
+    ls -l ~
+    ls -l -a ~
+    ls -la ~
+
+* ¿Qué son `-l` y `-a`?
+* ¿Cuál es la diferencia entre la primera y segunda línea? ¿Qué puede deducir de ello?
+* ¿Cuál es la diferencia entre la penúltima y última líneas? ¿Qué puede deducir de ello?
+
+
+###Ejercicio 9
+
+Para salir de una ejecución del comando `man`, sólo deberá presionar `q`.
+
+    man cd
+    man ls
+    man dir
+    man sudo
+    man mkdir
+    man pwd
+
+* ¿Cuál es la utilidad del comando `man`?
+
+###Ejercicio 10
+
+    exit
+
+Abra una nueva terminal y esta vez escriba `CTRL+D`
+
+* ¿Qué logró con ambas alternativas?
