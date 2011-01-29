@@ -1,12 +1,14 @@
 body{
     color: #444;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}    
-
-#container{
     width: 700px;
     margin: 0 auto;
+}    
+
+.header{
+    border-bottom: 1px dotted #555;
 }
+
 em{
     background-color: #FFF666;
 }
