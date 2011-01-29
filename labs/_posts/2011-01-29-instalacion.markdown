@@ -19,7 +19,7 @@ Para ello, necesitará lo siguiente:
 Todo el software requerido *ya se encuentra instalado y listo para usarse en la computadora que se le 
 ha proporcionado en el laboratorio*, de modo que debería seguir esta guía sin mayor complicación.
 
-##Paso uno: Montar la imagen de disco de ubuntu
+##Parte uno: Montar la imagen de disco de ubuntu
 
 Para instalar un nuevo sistema operativo en una computadora regular, nosotros siempre
 necesitamos un disco de instalación. La ventaja de las máquinas virtuales es que, 
@@ -51,7 +51,7 @@ gracias al programa `MagicDisc`, su computadora ahora reconoce como un disco com
 Lo que hicimos, en resumen, fue meter un disco a la computadora. Pero de una manera más complicada.
 Al menos nos ahorramos diez lempiras...
 
-##Paso dos: Crear una nueva máquina virtual
+##Parte dos: Crear una nueva máquina virtual
 
 En esta sección vamos a crear una computadora "cruda": tendrá todos los recursos, pero ningún
 sistema operativo. Gracias a la virtualización, podemos simular una o varias computadoras diferentes
@@ -96,5 +96,63 @@ dentro de nuestra propia computadora física, sin afectar a ésta de ninguna for
    ![Paso 9](/images/paso9.png)
 
 
+
+##Parte tres: configurar la máquina virtual
+
+Antes de instalar linux, tenemos que decirle a la máquina virtual dónde estarán algunos de
+sus periféricos. En concreto, nos toca conectar las unidades de CD de la máquina física a la
+virtual.
+
+
+1. En la pantalla principal de virtualbox, elija la máquina virtual que acaba de crear y dé
+   click en `Settings`. 
+2. Unidades de CD/DVD: En el menú `Settings`, elija la opción que dice `Storage`
+   en este paso deberá recordar en qué unidad montó la imagen de disco de
+   ubuntu en la [parte uno](#paso-uno). Debería ver algo como lo siguiente:
+
+   ![Paso 10](/images/paso10.png)
+
+
+#Parte cuatro: instalación de ubuntu-linux
+
+¡Al fin! En este apartado aprenderá a instalar linux (la distribución "ubuntu")
+en una computadora que no tiene sistema operativo (o que tiene, pero lo va a sustituir
+por ubuntu-linux). Aunque lo estaremos haciendo en una máquina virtual, los pasos son
+*los mismos para una instalación en una computadora física*. 
+
+
+1. Inicie la máquina virtual. Para ello, vaya a la pantalla principal de virtualbox,
+   elija la máquina que acabamos de crear y dé click en `Start`
+2. Si conectó bien las unidades de disco de la computadora física a esta máquina virtual,
+   verá una pantalla de carga de ubuntu. Después de unos segundos, verá algo como esto:
+
+   ![Paso 12](/images/paso12.png)
+
+3. Elija como idioma español y dé click en `Instalar ubuntu 10.04 LTS`
+4. Los teclados del laboratorio tienen una distribución estadounidense en las teclas, 
+   así que para que lo que el sistema operativo entiende y lo que usted ve en el teclado coincidan
+   elija la distribución para `EEUU`, como en la siguiente figura:
+
+   ![Paso 13](/images/paso13.png)
+
+5. En el siguiente paso prepararemos el disco para que hospede al sistema operativo. 
+   como en esta instalación hemos decidido *usar todo el disco de la máquina virtual para linux*, 
+   sólo debemos elegir la opción `Borrar y usar el disco entero`. Esto *eliminaría cualquier
+   otro sistema operativo presente*. Afortunadamente, la instalación de ubuntu lo detectaría y nos daría otra opción.
+   Como se dijo antes, elija la opción que ve en la siguiente figura:
+
+   ![Paso 14](/images/paso14.png)
+
+6. Si todo sale bien, veremos una pantalla de progreso en la instalación, esto puede tardar hasta una hora,
+   dependiendo de la capacidad de las unidades de disco y la computadora.
+
+7. Si la instalación termina con éxito, verá una pantalla que le dice que expulse el disco de
+   instalación. Como no estamos usando un disco físico, sino una imagen `.iso`, use MagicDisc para "desmontar"
+   este disco, dando click derecho en el ícono del programa, eligiendo el menú `Virtual CD/DVD ROM`, luego
+   la unidad donde montó el `.iso` y en ésta, la opción `Unmount`, como se ve en la figura
+
+   ![Paso 15](/images/paso15.png)
+
+   
 
 
