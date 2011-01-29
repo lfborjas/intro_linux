@@ -20,7 +20,7 @@
 
 !SLIDE bullets 
 
-### _algunos_ directorios importantes en linux:
+### _Algunos_ directorios importantes en linux:
 
 * `/bin/`: Aquí están los programas ejecutables
 * `/etc/`: Donde se guardan las configuraciones
