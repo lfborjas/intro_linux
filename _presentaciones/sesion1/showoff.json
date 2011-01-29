@@ -1,0 +1,9 @@
+{ 
+  "name": "Introducción a Linux",
+  "sections": 
+    [ 
+        {"section":"os"} ,
+        {"section": "vms"},
+        {"section": "linux"}
+    ]
+}
