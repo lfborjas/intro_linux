@@ -2,6 +2,7 @@
   "name": "Introducción a Linux",
   "sections": 
     [ 
+        {"section": "curso"},
         {"section":"os"} ,
         {"section": "vms"},
         {"section": "linux"}
