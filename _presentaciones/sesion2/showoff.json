@@ -2,8 +2,7 @@
     "name": "Sesión 2"
     ,"sections": [ 
          {"section":"filesystems"} 
-        ,{"section":"files_lab"} 
         ,{"section":"vi"} 
-        ,{"section":"vi_lab"} 
+        ,{"section":"laboratorio"} 
         ]
 }
