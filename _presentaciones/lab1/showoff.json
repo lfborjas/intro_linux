@@ -1,0 +1,5 @@
+{ "name": "Laboratorio 1", 
+  "sections": 
+    [ {"section":"instrucciones"} 
+      ,{"section": "soluciones"}
+    ]}
